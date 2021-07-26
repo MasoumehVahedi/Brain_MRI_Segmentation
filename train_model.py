@@ -53,6 +53,7 @@ def data_loader(path):
 
 
 def train_model(path):
+    # Load images and masks
     images_train, masks_train = data_loader(path)
     X_train, X_test, Y_train, Y_test = train_test_split(images_train, masks_train, test_size=0.2, random_state=42)
 
@@ -71,7 +72,7 @@ def train_model(path):
     BATCH_SIZE = 8
     input_shape = (IMG_HEIGHT, IMG_WIDTH, IMG_CHANNELS)
 
-    model = Attention_UNet(input_shape)
+    model = Attention_UNet(input_shape=input_shape)
     attention_unet_model = model.build_attention_unit()
     attention_unet_model.compile(optimizer="adam",
                                  loss="binary_crossentropy",
