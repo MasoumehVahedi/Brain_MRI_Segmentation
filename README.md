@@ -1,5 +1,5 @@
 # Brain Tumor Semantic Segmentation
-The first usage of the attention module was to improve the encoder decoder-based neural system for translation in natural language processing (NLP). After that, this type of model was used in computer vision and other applications.
+The first usage of the attention module was to improve the encoder decoder-based neural system for translation in natural language processing (NLP). After that, this type of model was used in computer vision and other applications. <br />
 The goal of the attention model is to create CNN learn and focus more on the important information, rather than learning non-useful background information.
 
 ## Content
