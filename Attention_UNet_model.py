@@ -16,7 +16,7 @@ from keras.layers import concatenate
 
 # Attention Unet
 class Attention_UNet():
-    def __init__(self, input_shape, num_classes=1, dropout=0, BatchNorm=True):
+    def __init__(self, input_shape, num_classes=1):
         super(Attention_UNet, self).__init__()
         self.max_pooling = True
         self.num_classes = num_classes
